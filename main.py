@@ -13,7 +13,7 @@ import base64
 from streamlit.runtime.scriptrunner import get_script_run_ctx  # 替代旧版线程API
 
 # 设置页面配置，页面标题为“Python期末项目”
-st.set_page_config(page_title="Python期末项目")
+st.set_page_config(page_title="破晓二部项目三")
 
 @contextmanager
 def st_redirect(src, dst):
@@ -195,7 +195,7 @@ elif inferenceSource == '2':
     opt.source = '0'
 
 # 在页面上显示标题
-st.title('欢迎来到我的Python期末项目！')
+st.title('欢迎使用人像识别系统')
 # 在页面上显示副标题
 st.subheader('基于YOLOv5的人体摔倒识别')
 
