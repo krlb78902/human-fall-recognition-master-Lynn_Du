@@ -141,7 +141,8 @@ parser.add_argument('--hide-conf', default=False, action='store_true', help='隐
 opt = parser.parse_args()
 
 # 定义检测源选项字典
-CHOICES = {0: "上传图片", 1: "上传视频", 2: "使用摄像头"}
+# CHOICES = {0: "上传图片", 1: "上传视频", 2: "使用摄像头"}
+CHOICES = {0: "上传图片", 1: "上传视频"}
 
 
 def _save_uploadedfile(uploadedfile):
