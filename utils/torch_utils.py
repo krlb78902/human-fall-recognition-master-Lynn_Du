@@ -301,3 +301,8 @@ class ModelEMA:
     def update_attr(self, model, include=(), exclude=('process_group', 'reducer')):
         # Update EMA attributes
         copy_attr(self.ema, model, include, exclude)
+
+
+def de_parallel(model):
+    # 从 DP/DDP 模型中提取模型
+    return model.module if is_parallel(model) else model

@@ -15,6 +15,7 @@ from streamlit.runtime.scriptrunner import get_script_run_ctx  # 替代旧版线
 # 设置页面配置，页面标题为“Python期末项目”
 st.set_page_config(page_title="破晓二部项目三")
 
+
 @contextmanager
 def st_redirect(src, dst):
     '''
@@ -50,6 +51,7 @@ def st_redirect(src, dst):
             # 恢复原始写入函数
             src.write = old_write
 
+
 @contextmanager
 def st_stdout(dst):
     '''
@@ -58,6 +60,7 @@ def st_stdout(dst):
     with st_redirect(sys.stdout, dst):
         yield
 
+
 @contextmanager
 def st_stderr(dst):
     '''
@@ -65,6 +68,7 @@ def st_stderr(dst):
     '''
     with st_redirect(sys.stderr, dst):
         yield
+
 
 def _all_subdirs_of(b='.'):
     '''
@@ -80,16 +84,19 @@ def _all_subdirs_of(b='.'):
             result.append(bd)
     return result
 
+
 def _get_latest_folder():
     '''
         返回runs\detect目录下最新的文件夹。
     '''
     return max(_all_subdirs_of(os.path.join('runs', 'detect')), key=os.path.getmtime)
 
+
 # 创建命令行参数解析器
 parser = argparse.ArgumentParser()
 # 添加模型权重文件路径参数，默认值为best.pt
 parser.add_argument('--weights', nargs='+', type=str, default='best.pt', help='模型权重文件路径')
+# parser.add_argument('--weights', nargs='+', type=str, default='yolov5n6.pt', help='模型权重文件路径')
 # 添加检测源参数，默认值为0，表示使用摄像头
 parser.add_argument('--source', type=str, default='0', help='检测源（文件/文件夹，0表示摄像头）')
 # 添加推理图像大小参数，默认值为640像素
@@ -136,6 +143,7 @@ opt = parser.parse_args()
 # 定义检测源选项字典
 CHOICES = {0: "上传图片", 1: "上传视频", 2: "使用摄像头"}
 
+
 def _save_uploadedfile(uploadedfile):
     '''
         将上传的视频保存到磁盘。
@@ -144,11 +152,13 @@ def _save_uploadedfile(uploadedfile):
         # 将上传的视频内容写入文件
         f.write(uploadedfile.getbuffer())
 
+
 def _format_func(option):
     '''
         用于选择框的键/值格式化函数。
     '''
     return CHOICES[option]
+
 
 # 在侧边栏创建一个选择框，让用户选择检测源
 inferenceSource = str(st.sidebar.selectbox('选择检测源:', options=list(CHOICES.keys()), format_func=_format_func))
