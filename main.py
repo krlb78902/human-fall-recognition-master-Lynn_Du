@@ -145,6 +145,7 @@ opt = parser.parse_args()
 CHOICES = {0: "上传图片", 1: "上传视频"}
 
 
+
 def _save_uploadedfile(uploadedfile):
     '''
         将上传的视频保存到磁盘。

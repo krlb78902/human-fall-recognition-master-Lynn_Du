@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="296257c0-f631-4d2d-9840-7cbff7fdf528" name="更改" comment="完善模型">
-      <change afterPath="$PROJECT_DIR$/data/images/0560.jpg_wh860.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/images/testq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/detect/exp10/testq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/detect/exp11/0560.jpg_wh860.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="296257c0-f631-4d2d-9840-7cbff7fdf528" name="更改" comment="完善模型" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,7 +183,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1750041350670</updated>
-      <workItem from="1750041352948" duration="13670000" />
+      <workItem from="1750041352948" duration="13970000" />
     </task>
     <task id="LOCAL-00001" summary="更新main.py">
       <option name="closed" value="true" />
@@ -208,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750098415888</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完善模型">
+      <option name="closed" value="true" />
+      <created>1750098840963</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1750098840963</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +222,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="完善模型" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/human_fall_recognition_master$run.coverage" NAME="run 覆盖结果" MODIFIED="1750095474411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/human_fall_recognition_master$run.coverage" NAME="run 覆盖结果" MODIFIED="1750098976175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/human_fall_recognition_master$python_train_py___img_640___batch_16___epochs_300___data____data_yaml___cfg_models_yolov5s_yaml___weights___.coverage" NAME="python train.py --img 640 --batch 16 --epochs 300 --data ../data.yaml --cfg models/yolov5s.yaml --weights '' 覆盖结果" MODIFIED="1750093012870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/human_fall_recognition_master$python_train_py.coverage" NAME="python train.py 覆盖结果" MODIFIED="1750092858566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/human_fall_recognition_master$train.coverage" NAME="train 覆盖结果" MODIFIED="1750085692987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
