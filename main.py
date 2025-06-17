@@ -207,7 +207,7 @@ elif inferenceSource == '2':
     opt.source = '0'
 
 # 在页面上显示标题
-st.title('欢迎使用人像识别系统')
+st.title('欢迎使用人像摔倒识别系统')
 # 在页面上显示副标题
 st.subheader('基于YOLOv5的人体摔倒识别')
 
