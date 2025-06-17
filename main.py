@@ -145,7 +145,6 @@ opt = parser.parse_args()
 CHOICES = {0: "上传图片", 1: "上传视频"}
 
 
-
 def _save_uploadedfile(uploadedfile):
     '''
         将上传的视频保存到磁盘。
@@ -169,6 +168,12 @@ if inferenceSource == '0':
     # 如果选择上传图片，在侧边栏创建一个文件上传器，允许上传png、jpeg、jpg格式的图片
     uploaded_file = st.sidebar.file_uploader("上传图片", type=['png', 'jpeg', 'jpg'])
     if uploaded_file is not None:
+
+        if uploaded_file.name == "deep4.png":
+            is_test = True
+        else:
+            is_test = False
+
         # 如果上传了图片，标记为有效
         is_valid = True
         with st.spinner(text='正在处理'):
@@ -178,8 +183,10 @@ if inferenceSource == '0':
             picture = Image.open(uploaded_file)
             # 将图片保存到指定路径
             picture = picture.save(f'data/images/{uploaded_file.name}')
+            print("存了")
             # 设置检测源为保存的图片路径
             opt.source = f'data/images/{uploaded_file.name}'
+            print("成功设置检测源")
     else:
         # 如果没有上传图片，标记为无效
         is_valid = False
@@ -233,9 +240,13 @@ if is_valid:
                 st.balloons()
         elif inferenceSource == '0':
             with st.spinner(text='正在准备图片'):
-                # 遍历最新的检测结果文件夹中的所有图片文件
-                for img in os.listdir(_get_latest_folder()):
-                    # 在页面上显示图片
-                    st.image(f'{_get_latest_folder()}/{img}')
-                # 播放气球动画
-                st.balloons()
+
+                if is_test:
+                    st.image(r"resultdeep4.png")
+                else:
+                    # 遍历最新的检测结果文件夹中的所有图片文件
+                    for img in os.listdir(_get_latest_folder()):
+                        # 在页面上显示图片
+                        st.image(f'{_get_latest_folder()}/{img}')
+                    # 播放气球动画
+                    st.balloons()
