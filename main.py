@@ -205,6 +205,7 @@ elif inferenceSource == '1':
             # 设置检测源为保存的视频路径
             opt.source = f'data/videos/{uploaded_file.name}'
     else:
+
         # 如果没有上传视频，标记为无效
         is_valid = False
 
