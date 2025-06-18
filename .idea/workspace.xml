@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="296257c0-f631-4d2d-9840-7cbff7fdf528" name="更改" comment="修改main选择模版">
-      <change afterPath="$PROJECT_DIR$/data/images/deep4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/images/摔倒.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resultdeep4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/detect/exp15/testq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/detect/exp16/testq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/detect/exp17/deep4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/detect/exp/zidane.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/detect/exp18/deep4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/detect/exp19/deep4.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +187,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1750041350670</updated>
-      <workItem from="1750041352948" duration="20201000" />
+      <workItem from="1750041352948" duration="21456000" />
     </task>
     <task id="LOCAL-00001" summary="更新main.py">
       <option name="closed" value="true" />
@@ -234,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750146651130</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="修改main选择模版">
+      <option name="closed" value="true" />
+      <created>1750162327317</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1750162327317</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
